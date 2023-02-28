@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    display: block;
+}
+body{
+    min-width: 1060px;
+}
+
+/*header*/
+
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 160px;
+    position: fixed;
+    z-index:1;
+}
+.inner{
+    width: 100%;
+    height: 135px;
+    position: absolute;
+    z-index:99;
+    padding: 15px;
+    display: flex;
+    box-sizing: border-box;
+}
+.inner .logo{
+    width: 17%;
+    font-size: 14.5px;
+    font-weight:600;
+}
+.inner nav{
+    width: 33%;
+}
+nav ul{
+    width: 80%;
+    columns: 2;
+}
+nav ul li{
+    border-bottom: 1px solid #222222;
+    font-weight:500;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+nav ul li:hover{
+    background-color: #00f;
+    color: #fff;
+}
+nav ul li:nth-child(1):hover{
+    color: #fff;
+}
+nav ul li:nth-child(1){
+    color: #00f;
+}
+nav ul li:nth-child(8){
+    border-bottom: none;
+    font-weight:500;
+    font-size: 13px;
+    line-height: 15px;
+}
+nav ul li:nth-child(11){
+    border-bottom: none;
+}
+nav ul li:nth-child(12){
+    border-bottom: none;
+}
+nav ul li:nth-child(16){
+    border-bottom: none;
+    font-weight:500;
+    font-size: 13px;
+    line-height: 15px;
+}
+.inner .explanation{
+    width: 49%;
+    margin-left: 1%;
+}
+.inner .explanation span{
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #444;
+}
+
+main{
+    padding: 0 10px;
+    position: relative;
+    top: 160px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer{
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    bottom: -300px;
+    padding: 10px 10px 40px 10px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.imgwrap{
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.image{
+    width: 20%;
+    object-fit: scale-down;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    border-right: 1px solid rgb(231, 231, 231);
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    
+}
+.shadow{
+    width: fit-content;
+    height: fit-content;
+    box-shadow: inset 0 0 300px rgba(0, 0, 0, 0.377);
+
+}
+.image img{
+    width: 100%;
+    
+}
+.on{
+    
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    transition-duration: 0.3s;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.row a img{
+    object-fit: cover;
+}
+.txt1{
+    width: 40%;
+}
+.txt2{
+    width: 20%;
+}
